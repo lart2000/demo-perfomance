@@ -1,0 +1,39 @@
+.modal_autors
+    // overflow: visible !important
+    .title
+    .content_inputs
+
+        margin-top: 40px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        .input-field
+            width: 47%
+            min-width: 150px
+            margin: 0
+            .input_modal
+                text-transform: uppercase
+                width: 100%
+            &:last-child
+                margin-top: 10px
+                width: 100%
+                label
+                    top: 5px
+    .modal-footer
+        display: flex
+        justify-content: space-around
+        .modal-action
+            display: flex
+            justify-content: center
+            align-items: center
+        .preloader-wrapper
+            display: none
+        &.show-preloader
+            .modal-action
+                display: none
+            .preloader-wrapper
+                margin: 0
+                display: block
+

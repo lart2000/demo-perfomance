@@ -1,0 +1,57 @@
+{
+  "name": "degrees_title_intranet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development && webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack -p  --config webpack.prod.js"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie > 9",
+    "last 2 versions"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "compression-webpack-plugin": "^1.1.11",
+    "css-loader": "^0.28.8",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "preload-webpack-plugin": "^2.3.0",
+    "react-svg-loader": "^2.1.0",
+    "style-ext-html-webpack-plugin": "^3.4.7",
+    "style-loader": "^0.19.1",
+    "svg-react-loader": "^0.4.5",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
+  },
+  "dependencies": {
+    "bowser": "^1.9.2",
+    "compress.js": "^1.1.2",
+    "lodash": "^4.17.4",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.0.10",
+    "react": "^16.4.0",
+    "react-countdown-now": "^1.3.0",
+    "react-dom": "^16.4.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "sass-loader": "^6.0.6",
+    "validator": "^10.3.0",
+    "webpack-merge": "^4.1.2"
+  }
+}

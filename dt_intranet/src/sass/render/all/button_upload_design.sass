@@ -1,0 +1,64 @@
+.button_upload_design
+    margin-bottom: 20px
+    display: flex
+    flex-direction: column
+    align-items: center
+    .btn_img
+        border: 1px $color_beach solid
+        font-size: 16px
+        border-radius: 15px
+        padding: 10px 15px
+        color: $color_beach
+        transition: all 0.2s ease-in
+        cursor: pointer
+        min-height: 30px
+        min-width: 170px
+        text-align: center
+        &:hover, &:focus
+            outline: 0
+            background: $color_beach
+            color: $color_white
+            border-color: $color_green_default
+    .picture_box
+        width: 200px
+        height: 200px
+        border: 1px $color_beach solid
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 10px
+        .icon_image_box
+            width: 130px
+            height: 130px
+            svg path
+                fill: $color_gray_91
+        img
+            display: none
+        .preloader-wrapper
+            display: none
+    &.with_file
+        .picture_box
+            background: $color_gray_95
+            img 
+                display: block
+                width: 198px
+                &.max_width
+                    width: 100%
+                &.max_height
+                    width: auto
+                    height: 100%
+            .icon_image_box
+                display: none
+            &.in_loading
+                background: $color_white
+                img
+                    display: none
+                .preloader-wrapper
+                    display: block
+                    .circle-clipper
+                        border-color: $color_beach
+    .file-field
+        display: flex
+        flex-direction: column
+        @include breakpoint(740px)
+            max-width: 240px

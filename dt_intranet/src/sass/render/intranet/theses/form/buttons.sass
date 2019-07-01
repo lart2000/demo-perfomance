@@ -1,0 +1,80 @@
+.buttons
+    display: flex
+    margin-top: 20px
+    .button_design
+        text-align: center
+        &:first-child
+            margin-right: 30px
+    #modal_confirm
+        width: 80%
+    .content_group
+        display: flex
+        justify-content: space-between
+    .title_header
+        cursor: default
+        padding: 15px
+        padding-bottom: 5px
+        .title_item
+            text-align: center
+        span
+            font-size: 20px
+    .group_data
+        width: 30%
+        &:first-child
+            width: 68%
+        > div
+            margin-bottom: 15px
+        .content_names
+            padding-left: 75px
+            span
+                display: block
+        .subtitle_detail
+            color: $color_green_default
+            font-size: 18px
+        .collection
+            a
+                cursor: default
+                color: $color_txt_dark
+            .separator_item_table
+                display: flex
+                > li
+                    width: 70%
+                    &:last-child
+                        width: 30%
+            .collection-item
+                .separator_item_table
+                    > li:last-child
+                        padding: 0 25px
+        .two_collections
+            display: flex
+            justify-content: space-between
+            // > div
+            //     width: 38%
+            // .date_lift
+            //     width: 60%
+            .options_item
+                display: flex
+                align-items: center
+                justify-content: space-around
+                padding: 3px 30px
+                .icon
+                    width: 26px
+                    height: 26px
+                    cursor: pointer
+                    svg
+                        fill: $color_gray_91
+                        transition: fill 0.3s ease
+                    &:hover
+                        svg
+                            fill: $color_green_default
+        .collapsible-body
+            padding: 15px 15px 0 15px
+    span
+        color: $color_txt_dark
+    .modal-footer
+        &.preloader_saving
+            display: flex
+            justify-content: center
+            min-height: 80px
+        .spinner-layer
+            border-color: $color_green_default

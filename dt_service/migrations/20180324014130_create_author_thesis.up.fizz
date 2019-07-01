@@ -1,0 +1,9 @@
+create_table("author_thesis", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("author_id", "uuid", {})
+	t.Column("thesis_id", "uuid", {})
+})
+add_foreign_key("author_thesis", "author_id", {"authors": ["id"]}, {
+    "name": "author_thesis_author_id",
+    "on_delete": "RESTRICT",
+    "on_update": "RESTRICT",})

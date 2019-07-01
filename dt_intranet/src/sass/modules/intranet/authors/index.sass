@@ -1,0 +1,28 @@
+.author_view
+    @import './../../../layouts/general/config.sass'
+    @import './../../../render/intranet/authors/index/title.sass'
+    @import './../../../render/intranet/authors/index/button_floating.sass'
+    @import './../../../render/intranet/authors/index/filter.sass'
+    @import './../../../render/all/pagination_design.sass'
+    width: 80%
+    margin: 0 auto
+    padding-bottom: 50px
+    .content
+        margin: 60px auto 40px
+        width: 90%
+    .preloader-wrapper
+        margin: 200px auto
+        display: flex
+        justify-content: center
+        align-items: center
+    .content_message
+        margin-top: 60px
+        display: none
+        justify-content: center
+        color: $color_gray_91
+    &.show-message
+        .preloader-wrapper
+            display: none
+        .content_message
+            display: flex
+

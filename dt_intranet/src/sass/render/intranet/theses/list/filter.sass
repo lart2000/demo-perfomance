@@ -1,0 +1,66 @@
+.form_filter
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    padding: 10px 25px
+    .content_inp_first
+        display: flex
+        justify-content: flex-start
+        align-items: center
+    .content_inp_field
+        display: flex
+        width: 100%
+        justify-content: space-between
+        > div
+            width: 30%
+    .input-field
+        .icon_info
+            width: 20px
+            height: 20px
+            position: absolute
+            top: -12px
+            left: 75px
+            svg
+                fill: $color_gray_9e
+                transition: fill 0.3s ease
+            &:hover
+                svg
+                    fill: $color_green_default
+    .inp_thesis
+        width: 600px
+        margin-right: 50px
+    .inp_short
+        margin-right: 10px
+        max-width: 230px
+        .select-wrapper
+            input
+                padding-right: 10px
+    .inp_medium
+        max-width: 600px
+        width: 200px
+    ul li span
+        color: $color_green_default
+    .chips
+        margin-top: 5px
+        input
+            max-width: 240px
+        .material-icons
+            width: 20px
+            height: 20px
+            display: inherit
+            margin-left: 6px
+            position: relative
+            &:before,&:after
+                content: ""
+                display: block
+                width: 15px
+                height: 2px
+                background: $color_gray_9e
+                position: absolute
+                top: 14px
+                left: 6px
+            &:before
+                transform: rotate(45deg);
+            &:after
+                transform: rotate(135deg);

@@ -1,0 +1,10 @@
+create_table("jury_thesis", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("jury_id", "uuid", {})
+	t.Column("thesis_id", "uuid", {})
+	t.Column("charge_id", "uuid", {})
+})
+add_foreign_key("jury_thesis", "jury_id", {"juries": ["id"]}, {
+    "name": "jury_thesis_jury_id",
+    "on_delete": "RESTRICT",
+    "on_update": "RESTRICT",})

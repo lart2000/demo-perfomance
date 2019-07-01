@@ -1,0 +1,2 @@
+drop_foreign_key("adviser_thesis", "adviser_thesis_adviser_id", {"if_exists": true})
+drop_table("adviser_thesis")

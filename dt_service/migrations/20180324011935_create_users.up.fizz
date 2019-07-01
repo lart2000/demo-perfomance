@@ -1,0 +1,8 @@
+create_table("users", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("full_name", "varchar(250)", {})
+	t.Column("name_user", "varchar(100)", {})
+	t.Column("password", "varchar(100)", {})
+	t.Column("status", "text", {})
+	t.Column("role_id", "uuid", {})	
+})

@@ -1,0 +1,89 @@
+.content_inputs
+    display: flex
+    align-items: center
+    .inp_groups
+        display: flex
+        justify-content: space-around
+        position: relative
+        .input-field
+            margin-top: 0
+            max-width: 250px
+            &:first-child
+                margin-right: 50px
+            input
+                margin: 0
+                height: 44px
+        .content_coincidences
+            background: $color_white
+            position: absolute
+            width: 100%
+            top: 46
+            border: 1px solid $color_green_default
+            z-index: 10
+            span
+                padding: 5px 10px
+                cursor: pointer
+                color: $color_txt_dark
+                display: block
+                border-bottom: 0.5px solid $color_gray_e0
+                transition: 0.3s background ease
+                font-size: 13px
+                &:last-child
+                    border: none
+                &:hover
+                    background: $color_gray_soft
+        .school_content
+            display: none
+            &.showSelect
+                display: block
+    .content_select
+        min-width: 150px
+        margin-left: 50px
+        .select-wrapper
+            height: 44px
+            input
+                color: $color_txt_dark
+    .item_selected
+        display: flex
+        margin-top: 0
+        .across
+            width: 20px
+            height: 20px
+            display: inherit
+            margin-left: 6px
+            position: relative
+            cursor: pointer
+            &:before,&:after
+                content: ""
+                display: block
+                width: 15px
+                height: 2px
+                background: $color_gray_9e
+                position: absolute
+                top: 9px
+                left: 6px
+            &:before
+                transform: rotate(45deg);
+            &:after
+                transform: rotate(135deg);
+            &:hover
+                &:before,&:after
+                    background: $color_green_default
+    .icon_save
+        width: 30px
+        height: 30px
+        margin-left: 20px
+        cursor: pointer
+        position: relative
+        svg
+            transition: 0.2s fill ease-out
+            fill: $color_gray_9e
+        &:hover
+            svg
+                fill: $color_green_default
+    .preloader-wrapper
+        width: 20px
+        height: 20px
+        margin-left: 15px
+        .spinner-layer
+            border-color: $color_green_default

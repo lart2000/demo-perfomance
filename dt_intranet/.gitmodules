@@ -1,0 +1,3 @@
+[submodule "gulper"]
+	path = gulper
+	url = git@gitlab.com:ginsoft/gulper.git

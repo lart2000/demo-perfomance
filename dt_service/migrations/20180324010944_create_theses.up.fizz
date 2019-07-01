@@ -1,0 +1,8 @@
+create_table("theses", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("name", "string", {})
+	t.Column("code", "string", {})
+	t.Column("summary", "string", {})
+	t.Column("date_lift", "time", {})
+	t.Column("status", "char(1)", {})
+})

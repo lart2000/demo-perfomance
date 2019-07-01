@@ -1,0 +1,30 @@
+.input-field
+    position: relative
+    width: 100%
+    min-width: 200px
+    input,textarea
+        color: $color_txt_dark
+        &:focus
+            outline: 0
+            ~ .icon_inp svg path
+                fill: $color_green_default
+    textarea
+        min-height: 30px
+        min-width: 250px
+    input
+        background: none
+    &.icon
+        input
+            padding-right: 32px
+    .icon_inp
+        width: 20px
+        height: 20px
+        position: absolute
+        top: 10px
+        right: 10px
+        z-index: -1
+        svg path
+            fill: $color_gray_91
+            transition: fill 0.3s ease-out
+    label
+        font-size: 16px

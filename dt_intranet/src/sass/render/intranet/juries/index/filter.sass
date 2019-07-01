@@ -1,0 +1,43 @@
+.content_filter
+    max-width: 800px
+    margin: 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .content_name
+        display: flex
+        justify-content: center
+        align-items: center
+        .input-field
+            max-width: 370px
+            width: 100%
+            
+        .svg_search
+            width: 30px
+            height: 30px
+            transition: fill 0.3s
+            fill: $color_gray_default
+            &.focus
+                fill: $color_green_default
+    .content_school
+        align-self: center
+        
+        .caret
+            pointer-events: none
+            display: flex
+            align-items: center
+            background: $color_white
+            z-index: 998
+            justify-content: center
+            align-self: center
+            width: 20px
+            height: 30px
+        .dropdown-content 
+            z-index: 10001
+            
+        
+            
+
+
+    
+

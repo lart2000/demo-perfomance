@@ -1,0 +1,47 @@
+.user_show
+    width: 100%
+    display: flex
+    justify-content: flex-end
+    margin-top: 25px
+    position: fixed
+    bottom: 0
+    .content_data
+        position: relative
+        background: $color_white 
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+        padding: 8px 15px
+        margin-right: 80px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border: 0.5px solid $color_gray_default
+        border-bottom-width: 0
+        span
+            margin-right: 15px
+            color: $color_green_default
+        .icon_type_user
+            background: $color_green_active_3f
+            border-radius: 50px
+            width: 15px
+            height: 15px
+            &.error_cn
+                background: $color_red_ea
+
+        .content_logout
+            display: none
+            background: $color_white 
+        &:hover>.content_logout
+            color: $color_green_default
+            transition: 0.3s all
+            position: absolute
+            top: -100%
+            right: -50%
+            display: flex
+            justify-content: space-between
+            svg
+                height: 20px
+                width: 20px
+                fill: $color_green_default
+            &:hover
+                background: $color_gray_soft

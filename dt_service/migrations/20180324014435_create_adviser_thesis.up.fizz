@@ -1,0 +1,9 @@
+create_table("adviser_thesis", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("adviser_id", "uuid", {})
+	t.Column("thesis_id", "uuid", {})
+})
+add_foreign_key("adviser_thesis", "adviser_id", {"advisers": ["id"]}, {
+    "name": "adviser_thesis_adviser_id",
+    "on_delete": "RESTRICT",
+    "on_update": "RESTRICT",})

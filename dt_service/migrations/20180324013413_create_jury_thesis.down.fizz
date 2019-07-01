@@ -1,0 +1,2 @@
+drop_foreign_key("jury_thesis", "jury_thesis_jury_id", {"if_exists": true})
+drop_table("jury_thesis")

@@ -1,0 +1,16 @@
+.tooltip_design
+    .space_tooltip
+        height: 25px
+        position: absolute
+        top: -35px
+        left: -15px
+        padding: 5px
+        font-size: 12px
+        white-space: pre
+        opacity: 0
+        visibility: hidden
+        transition: visibility 0s, opacity 0.3s linear
+    &:hover
+        .space_tooltip
+            visibility: visible
+            opacity: 1

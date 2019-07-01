@@ -1,0 +1,86 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: sans-serif
+
+html
+	padding: 0
+
+svg
+	width: 100%
+	height: 100%
+
+.ds-flex
+	display: flex
+	align-items: center
+	&.column
+		flex-direction: column
+	&.row
+		flex-direction: row
+	&.end
+		justify-content: flex-end
+	&.center
+		justify-content: center
+	&.between
+		justify-content: space-between
+	&.around
+		justify-content: space-around
+	&.stretch
+		align-self: stretch
+	&.align-end
+		align-items: flex-end
+	&.align-start
+		align-items: flex-start
+	&.align-baseline
+		align-items: baseline
+
+/* FONT SIZE*/
+h1 
+	font-size: 22px
+	font-weight: normal
+	letter-spacing: 1px
+	@include breakpoint(768px) 
+		font-size: 29px
+	@include breakpoint(1024px) 
+		font-size: 36px
+	@include breakpoint(1360px) 
+		font-size: 44px
+p 
+	line-height: 140%
+	letter-spacing: 0.2px
+	color: $color_txt_dark
+span.requerid 
+	color: $color_green_default
+	padding-left: 5px
+table tbody td
+	color: $color_txt_dark
+
+/* PLACEHOLDER EDIT */
+input::-webkit-input-placeholder 
+	color: $color_gray_default
+	opacity: 1
+input:-moz-placeholder 
+	color: $color_gray_default
+	opacity: 1
+input:-ms-input-placeholder 
+	color: $color_gray_default
+	opacity: 1
+
+a 
+	text-decoration: none
+	cursor: pointer
+
+li 
+	list-style: none
+
+i
+	font-size: 0
+	display: block
+
+ul.parsley-errors-list
+	font-size: 12px
+
+	li
+		color: red
+		padding-top: 5px

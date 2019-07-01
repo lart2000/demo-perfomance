@@ -1,0 +1,24 @@
+{
+    "menu":[
+        {
+                "title": "Tesis",
+                "url"  : "/tesis"
+        },
+        {
+                "title": "Autores",
+                "url"  : "/autor/lista"
+        },
+        {
+                "title": "Jurados",
+                "url"  : "/jurado/lista"
+        },
+        {
+                "title": "Asesores",
+                "url"  : "/asesor/lista"
+        },
+        {
+            "title": "Configuración",
+            "url"  : "/configuracion"
+        }
+    ]
+}

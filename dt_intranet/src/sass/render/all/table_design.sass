@@ -1,0 +1,123 @@
+$publication: 110px
+
+.table_design
+    padding: 0 15px
+    .message_empty
+        text-align: center
+        padding: 20px
+        color: $color_gray_cc
+    .collapsible
+        margin: 0
+    .distribution
+        @include breakpoint(780px)
+            display: flex
+            > div
+                width: 100%
+                padding: 0px 15px
+            .order_number
+                max-width: 58px
+                text-align: center
+            .publication_item
+                max-width: $publication
+            .options_item
+                max-width: 100px
+                width: 100%
+    .headboard
+        background: $color_green_default
+        padding: 15px
+        padding-bottom: 10px
+        text-align: center
+        margin: 0 23px
+        span
+            color: $color_white
+        @include breakpoint(0 779px)
+            display: none
+    .body_table_design
+        .message
+            padding: 30px
+            margin-top: 5px
+            text-align: center
+            margin: 0 23px
+        .content_preloader
+            display: flex
+            justify-content: center
+            padding: 50px
+            margin: 0 23px
+            .spinner-layer
+                border-color: $color_green_default
+        .content_group
+            display: flex
+            justify-content: space-between
+        .title_item
+            display: flex
+            align-items: center
+        .group_data
+            width: 30%
+            &:first-child
+                width: 68%
+            > div
+                margin-bottom: 15px
+            .content_names
+                padding-left: 75px
+                span
+                    display: block
+            .subtitle_detail
+                color: $color_green_default
+                font-size: 18px
+            .collection
+                border: 1px solid $color_gray_e0
+                a
+                    cursor: default
+                    color: $color_txt_dark
+                .separator_item_table
+                    display: flex
+                    > li
+                        width: 70%
+                        &:last-child
+                            width: 30%
+                .collection-item
+                    .separator_item_table
+                        > li:last-child
+                            padding: 0 25px
+            .two_collections
+                display: flex
+                justify-content: space-between
+                > div
+                    width: 38%
+                .date_lift
+                    width: 60%
+                .options_item
+                    display: flex
+                    align-items: center
+                    justify-content: space-around
+                    padding: 3px 30px
+                    .icon
+                        width: 26px
+                        height: 26px
+                        cursor: pointer
+                        svg
+                            fill: $color_gray_91
+                            transition: fill 0.3s ease
+                        &:hover
+                            svg
+                                fill: $color_green_default
+                .content_icon
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    height: 30px
+                    .icon_edit
+                        padding: 0
+                        width: 24px
+                        height: 24px
+                        cursor: pointer
+                        svg
+                            fill: $color_gray_91
+                            transition: fill 0.3s ease-out
+                        &:hover
+                            svg
+                                fill: $color_green_default
+        .collapsible-body
+            padding: 15px 15px 0 15px
+    span
+        color: $color_txt_dark

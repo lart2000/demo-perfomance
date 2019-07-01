@@ -1,0 +1,46 @@
+.button_design
+    padding: 8px 15px
+    min-width: 150px
+    font-size: 16px
+    background: none
+    border: 1px $color_green_default solid
+    color: $color_green_default
+    border-radius: 15px
+    transition: all 0.3s ease-in
+    cursor: pointer
+    &:hover, &:focus
+        outline: 0
+        background: $color_green_default
+        color: $color_white
+        border-color: $color_green_default
+    &._save
+        border-color: $color_gray_91
+        color: $color_gray_91
+        cursor: default
+        &:hover, &:focus
+            background: none
+        &._complete
+            cursor: pointer
+            border-color: $color_green_success_45d
+            color: $color_green_success_45d
+            &:hover, &:focus
+                background: $color_green_success_45d
+                color: $color_white
+                border-color: $color_green_success_34b
+        &._complete2
+            background: none
+            border: 1px $color_green_default solid
+            color: $color_green_default
+            cursor: pointer
+            &:hover, &:focus
+                outline: 0
+                background: $color_green_default
+                color: $color_white
+                border-color: $color_green_default
+    &._cancel
+        border-color: $color_red_f5
+        color: $color_red_f5
+        &:hover, &:focus
+            background: $color_red_f5
+            color: $color_white
+            border-color: $color_red_ea

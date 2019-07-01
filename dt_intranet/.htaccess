@@ -1,0 +1,56 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
+<IfModule mod_headers.c>
+   Header set Connection keep-alive
+   <filesmatch "\.(ico|flv|gif|swf|eot|woff|otf|ttf|svg)$">
+       Header set Cache-Control "max-age=2592000, public"
+   </filesmatch>
+   <filesmatch "\.(jpg|jpeg|png)$">
+       Header set Cache-Control "max-age=1209600, public"
+   </filesmatch>
+   <filesmatch "\.(eot|woff|otf|ttf|svg)$">
+       Header set Cache-Control "max-age=2592000, public"
+   </filesmatch>
+   <filesmatch "\.(css)$">
+       Header set Cache-Control "max-age=31536000, private"
+   </filesmatch>
+   <filesmatch "\.(js)$">
+       Header set Cache-Control "max-age=1209600, private"
+   </filesmatch>
+   <filesMatch "\.(x?html?|php)$">
+       Header set Cache-Control "max-age=600, private, must-revalidate"
+     </filesMatch>
+</IfModule>
+<IfModule mod_deflate.c>
+  <Files *.html>
+    SetOutputFilter  DEFLATE
+  </Files>
+  <Files *.xml>
+    SetOutputFilter  DEFLATE
+  </Files>
+  <Files *.css>
+    SetOutputFilter  DEFLATE
+  </Files>
+  <Files *.js>
+    SetOutputFilter  DEFLATE
+  </Files>
+  <Files *.jpg>
+    SetOutputFilter  DEFLATE
+  </Files>
+  <Files *.jpeg>
+    SetOutputFilter  DEFLATE
+  </Files>
+  <Files *.png>
+    SetOutputFilter  DEFLATE
+  </Files>
+  <Files *.map>
+    SetOutputFilter  DEFLATE
+  </Files>
+</IfModule>

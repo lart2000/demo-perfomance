@@ -1,0 +1,57 @@
+.lateral_menu
+    .content_menu
+        position: absolute
+        width: 150px
+        height: 100%
+        background: $color_green_default
+        top: 0
+        left: 0
+        z-index: 1002
+        .item_menu
+            padding: 15px 10px
+            border-bottom: 2px solid $color_green_default_05
+            display: flex
+            justify-content: center
+            align-items: center
+            cursor: pointer
+            transition: background 0.2s ease-in
+            &:first-child
+                border-top: 2px solid $color_green_default_05
+            span
+                color: $color_white
+                transition: color 0.2s ease-in
+                font-size: 18px
+                text-align: center
+            &.selected
+                background: $color_green_default_05
+                span
+                    color: $color_yellow_medium
+        a.item_menu
+            &:hover
+                background: $color_green_default_05
+                span
+                    color: $color_gray_cc
+        .content_close
+            width: 100%
+            height: 45px
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            .icon_exit
+                width: 24px
+                height: 24px
+                margin-right: 15px
+                cursor: pointer
+                svg
+                    fill: $color_white
+    .previous_background
+        z-index: 1001
+        position: absolute
+        top: 45px
+        left: 0
+        opacity: 0.5
+        width: 100%
+        height: calc(100% - 45px)
+        background: black
+    &.hidden
+        display: none
